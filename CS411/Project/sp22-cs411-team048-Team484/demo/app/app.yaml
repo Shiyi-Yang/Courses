@@ -1,0 +1,15 @@
+runtime: python38
+
+instance_class: F1
+
+env_variables:
+  MYSQL_USER: 'root'
+  MYSQL_PASSWORD: 'test123'
+  MYSQL_DB: 'GroceryTracker'
+  MYSQL_HOST: '34.134.166.47'
+
+handlers:
+  - url: /js
+    static_dir: static/js
+  - url: /css
+    static_dir: static/css

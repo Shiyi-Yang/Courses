@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add New Product Item</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-body">
+          <% if (messages.success) { %>
+              <p class="alert alert-success m2-4 mb-2"><%- messages.success %></p>
+          <% } %>  
+ 
+          <h2>Add New Product Item</h2>
+ 
+          <form action="create-item" method="POST">
+            <div class="form-group">
+              <label for="name">Name (required)</label>
+              <input type="text" class="form-control col-lg-9" id="name" aria-describedby="emailHelp" placeholder="Enter item name (required)" name="name">
+            </div>
+            <div class="form-group">
+              <label for="plucode">PLU Code</label>
+              <input type="text" class="form-control col-lg-9" id="plucode" aria-describedby="emailHelp" placeholder="Enter PLUcode" name="plucode">
+            </div>
+            <div class="form-group">
+              <label for="lifespan">Lifespan</label>
+              <input type="text" class="form-control col-lg-9" id="lifespan" aria-describedby="emailHelp" name="lifespan" placeholder="Enter lifespan">
+            </div>        
+            <div class="form-group">
+              <label for="calories">Calories</label>
+              <input type="text" class="form-control col-lg-9" id="calories" aria-describedby="emailHelp" name="calories" placeholder="Enter Calories">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+    {{!-- include css files --}}
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+</head>
+
+<body>
+
+    <body>
+        {{!-- layout --}}
+        <header>
+            <!-- navigation -->
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <img src="https://k48b9e9840-flywheel.netdna-ssl.com/wp-content/uploads/2021/09/gemma-stpjHJGqZyw-unsplash.jpg"
+                            width="30" height="30" class="d-inline-block align-top" alt="Product List">
+                        Product List
+                    </a>
+                </div>
+            </nav>
+            <div class="banner"></div>
+        </header>
+        {{!-- include partial template --}}
+        {{{body}}}
+        {{!-- include javascript files--}}
+        <script src="/javascripts/jquery-3.6.0.min.js"></script>
+        <script src="/javascripts/popper.min.js"></script>
+        <script src="/javascripts/bootstrap.js"></script>
+    </body>
+</body>
+
+</html>
