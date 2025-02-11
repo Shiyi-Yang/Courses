@@ -1,0 +1,3 @@
+[submodule "CS144/minnow"]
+	path = CS144/minnow
+	url = git@github.com:Shiyi-Yang/minnow.git
